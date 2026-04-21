@@ -1,0 +1,39 @@
+cff-version: 1.2.0
+title: "Cross-cohort recalibration of the WHO FRAX 10-year fracture-risk calculator on zero-auth public data: closing the Crandall 2023 Black-women gap without a new assay"
+message: "If you use this work (paper, figures, code, or recalibration coefficients), please cite it as below."
+type: software
+authors:
+  - family-names: "El Ouahabi"
+    given-names: "Maher"
+    email: "maher.elouk2@gmail.com"
+repository-code: "https://github.com/maher-coder/frax-benchmark"
+url: "https://github.com/maher-coder/frax-benchmark"
+abstract: >-
+  A pure-Python reimplementation of the WHO FRAX 10-year fracture-risk
+  calculator (Kanis 2008) with a three-stage cross-cohort recalibration
+  hierarchy, validated on four zero-auth public cohorts: NHANES III
+  (Hologic QDR-1000 DXA, 1988-1994, n=8752) and NHANES continuous cycles
+  D/E/F (Hologic Discovery A, 2005-2010, n=8818). Pooled n=17,570 adults
+  40-90 with 296 prevalent self-reported hip fractures. Overall FRAX-HF
+  AUC 0.662; NH White female 0.801 vs NH Black female 0.489 (replicating
+  the Crandall 2023 JBMR Plus "AUC 0.55 in Black women" failure mode on
+  zero-auth data). Four-way leave-one-cohort-out Stage-1 recalibration
+  (per race-sex logistic refit) lifts AUC by +0.023 to +0.064 on 3 of 4
+  held-out cohorts and fixes FRAX's 5x over-prediction of hip-fracture
+  incidence (O/E 0.15-0.22 to 0.88-1.29), restoring positive Net Benefit
+  at the USPSTF 3% decision threshold. Third in a benchmark-series
+  (prevent-benchmark cardiovascular, oncotype-benchmark breast cancer)
+  consistently finding that published signatures + thin recalibration
+  beat pure ML refits cross-cohort.
+license: MIT
+keywords:
+  - osteoporosis
+  - FRAX
+  - fracture risk
+  - NHANES
+  - cross-cohort validation
+  - recalibration
+  - bone mineral density
+  - race disparities
+date-released: 2026-04-21
+version: "1.0.0"
